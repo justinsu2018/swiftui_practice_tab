@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F405351A26F9538300F7F3F6 /* Tabitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405351926F9538300F7F3F6 /* Tabitem.swift */; };
+		F405351C26F953B400F7F3F6 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F405351B26F953B400F7F3F6 /* TabModel.swift */; };
 		F4DD2DA026F8CA0100593C31 /* TabAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD2D9F26F8CA0100593C31 /* TabAppApp.swift */; };
 		F4DD2DA226F8CA0100593C31 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD2DA126F8CA0100593C31 /* ContentView.swift */; };
 		F4DD2DA426F8CA0200593C31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4DD2DA326F8CA0200593C31 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F405351926F9538300F7F3F6 /* Tabitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabitem.swift; sourceTree = "<group>"; };
+		F405351B26F953B400F7F3F6 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
 		F4DD2D9C26F8CA0100593C31 /* TabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4DD2D9F26F8CA0100593C31 /* TabAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabAppApp.swift; sourceTree = "<group>"; };
 		F4DD2DA126F8CA0100593C31 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F405351426F951B100F7F3F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F405351926F9538300F7F3F6 /* Tabitem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F405351526F951BE00F7F3F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4DD2DA126F8CA0100593C31 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F405351626F951C400F7F3F6 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F405351B26F953B400F7F3F6 /* TabModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		F4DD2D9326F8CA0100593C31 = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +80,10 @@
 		F4DD2D9E26F8CA0100593C31 /* TabApp */ = {
 			isa = PBXGroup;
 			children = (
+				F405351626F951C400F7F3F6 /* ViewModels */,
+				F405351526F951BE00F7F3F6 /* Views */,
+				F405351426F951B100F7F3F6 /* Models */,
 				F4DD2D9F26F8CA0100593C31 /* TabAppApp.swift */,
-				F4DD2DA126F8CA0100593C31 /* ContentView.swift */,
 				F4DD2DA326F8CA0200593C31 /* Assets.xcassets */,
 				F4DD2DA826F8CA0200593C31 /* Info.plist */,
 				F4DD2DA526F8CA0200593C31 /* Preview Content */,
@@ -139,7 +169,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DD2DA226F8CA0100593C31 /* ContentView.swift in Sources */,
+				F405351C26F953B400F7F3F6 /* TabModel.swift in Sources */,
 				F4DD2DA026F8CA0100593C31 /* TabAppApp.swift in Sources */,
+				F405351A26F9538300F7F3F6 /* Tabitem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
